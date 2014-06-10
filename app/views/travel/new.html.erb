@@ -1,0 +1,43 @@
+<div class="page-header">
+  <h3>Create your trip</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-5">
+
+    <%= form_tag "/trips", "method" => "post"  %>
+
+      <div class="form-group">
+        <%= label_tag "number_people", "How many people are traveling with you?" %>
+        <%= label_tag :number_people %>
+        <%= select_tag :number_people, options_for_select(['1','2','3','4','5']) %>
+
+      </div>
+
+      <div class="form-group">
+        <%= label_tag "occasion", "Who are you traveling with?" %>
+         <%= label_tag :occasion %>
+        <%= select_tag :occasion, options_for_select(['Partner/Spouse','Family','Friends']) %>
+      </div>
+
+      <div class="form-group">
+        <%= label_tag "style", "What kind of trip is it?" %>
+        <%= label_tag :style %>
+        <%= select_tag :style, options_for_select(['Party time!','Relax','Adventure', 'Romantic', 'History/Turism']) %>
+      
+      </div>
+
+      <div class="form-group">
+        <%= label_tag "place", "Where are you going?" %>
+        <%= text_field_tag "place", "", "class" => "form-control" %>
+        <%= label_tag "season", "What season will it be?" %>
+        <%= label_tag :season %>
+        <%= select_tag :season, options_for_select(['Summer','Winter','Fall', 'Spring']) %>
+      
+      
+      </div>
+      <%= submit_tag "Submit", "class" => "btn btn-lg btn-success" %> or <%= link_to "Cancel", "/trips" %>
+
+    </form>
+</div>
+</div>

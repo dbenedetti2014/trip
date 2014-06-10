@@ -1,3 +1,22 @@
+User:
+  - username: string
+  - password: string
+  - first_name: string
+  - last_name: string
+
+Travel:
+  - user_id: integer
+  - place: string
+  - season: string
+  - number_people: string
+  - occasion: string
+  - style: string
+
+Tip:
+  - user_id: integer
+  - trip_id: integer
+  - content: text
+
 # Example table for a typical Book model.
 #
 # Book:
