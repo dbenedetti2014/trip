@@ -7,7 +7,7 @@
             <% if user.present? %>
             <h5><%= user["first_name"] %></h5>
 
-<% the_trip = Trip.find_by("user_id" => params["zebra"]) %>
+<% the_trip = Travel.find_by("user_id" => user["id"]) %>
 
 
 
@@ -16,7 +16,7 @@
 
 <h5>Please give me your Best Tips</h5>
 
-    <%= form_tag "/recommendations", "method" => "post"  %>
+    <%= form_tag "/tips", "method" => "post"  %>
 
       <div class="form-group">
         <%= label_tag  "username", "" %>

@@ -9,7 +9,7 @@ def create
    				"username" => params["username"],
                   "password" => params["password"])
      
-      redirect_to "/trips/new"
+      redirect_to "/travels/new"
 else
 
 @message = "That username is taken."
