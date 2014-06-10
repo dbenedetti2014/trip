@@ -18,7 +18,7 @@ Trip::Application.routes.draw do
   get "/users/:id" => 'users#show'
 
 
-   get "/travels/new" => 'travels#new'
+  get "/travels/new" => 'travels#new'
   post "/travels" => 'travels#create'
 
   # --- Read

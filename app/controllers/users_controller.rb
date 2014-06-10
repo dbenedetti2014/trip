@@ -9,7 +9,7 @@ def create
    				"username" => params["username"],
                   "password" => params["password"])
      
-      redirect_to "/travels/new"
+      redirect_to "/", :notice => "Thanks for Signing Up! Now you are ready to Create your Trip! Please Sign In"
 else
 
 @message = "That username is taken."

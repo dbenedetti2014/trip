@@ -6,6 +6,6 @@ class TravelsController < ApplicationController
    	"style" => params["style"],
                   "season" => params["season"])
   
-      redirect_to "/travels/show"
+      redirect_to "/users/show"
   end
 end

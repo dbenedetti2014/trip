@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h3>Create your trip</h3>
+  <h3>Create your trip or <%= link_to 'View your trip',"/users/show" %></h3>
 </div>
 
 <div class="row">
@@ -10,7 +10,7 @@
       <div class="form-group">
         <%= label_tag "number_people", "How many people are traveling with you?" %>
         <%= label_tag :number_people %>
-        <%= select_tag :number_people, options_for_select(['1','2','3','4','5']) %>
+        <%= select_tag :number_people, options_for_select(['1','2','3','4','5','6','7','8','9','10']) %>
 
       </div>
 
@@ -41,3 +41,4 @@
     </form>
 </div>
 </div>
+

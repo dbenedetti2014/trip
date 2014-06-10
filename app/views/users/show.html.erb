@@ -22,3 +22,12 @@
  
 
 <% end %>
+
+
+
+
+<h3> Current Weather in <em>Place</em></h3>
+<% city = "Evanston,IL" %>
+<% current_conditions = weather (city) %>
+ <% temp = current_conditions [:temp] %>
+<p> It is <%= temp %> degrees outside in <%= city %> . </p>
