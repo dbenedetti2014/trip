@@ -7,16 +7,13 @@
             <% if user.present? %>
             <h5><%= user["first_name"] %></h5>
 
-<% the_trip = Travel.find_by("user_id" => user["id"]) %>
-
-
-
- 	<h5> I am traveling with my friends to <%=the_trip %> and I want Adventure in my trip! </h5> 
+<h5> I am traveling with my People to Place and the type of trip I want is: Adventure </h5> 
+<div>
 <div>
 
 <h5>Please give me your Best Tips</h5>
 
-    <%= form_tag "/tips", "method" => "post"  %>
+    <%= form_tag "/travels", "method" => "post"  %>
 
       <div class="form-group">
         <%= label_tag  "username", "" %>
