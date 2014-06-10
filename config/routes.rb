@@ -32,5 +32,20 @@ Trip::Application.routes.draw do
   # --- Delete
   delete "/travels/:id" => 'travels#destroy'
 
+
+  get "/tips/new" => 'tips#new'
+  post "/tips" => 'tips#create'
+
+  # --- Read
+  get "/tips" => 'tips#index'
+  get "/tips/:id" => 'tips#show'
+
+  # -- Update
+  get "/tips/:id/edit" => 'tips#edit'
+  patch "/tips/:id" => 'tips#update'
+
+  # --- Delete
+  delete "/tips/:id" => 'tips#destroy'
+
  
 end
